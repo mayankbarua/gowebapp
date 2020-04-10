@@ -38,6 +38,6 @@ func main() {
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/", getCurrentTime)
 	router.HandleFunc("/time", getTimeInZones)
-	fmt.Println("Go Server Started at port 8000..")
+	fmt.Println("Go Server Started at port 8000...")
 	log.Fatal(http.ListenAndServe(":8000", router))
 }
